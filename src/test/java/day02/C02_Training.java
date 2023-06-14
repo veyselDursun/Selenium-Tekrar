@@ -39,6 +39,7 @@ public class C02_Training {
         }
         //4.https://www.walmart.com/ sayfasina gidin.
         driver.navigate().to("https://www.walmart.com/");
+
         //5. Sayfa basliginin “Walmart.com” icerdigini dogrulayin.
         expectedTitle = "Walmart.com";
         actualTitle = driver.getTitle();
