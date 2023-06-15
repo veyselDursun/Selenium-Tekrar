@@ -11,6 +11,7 @@ import java.util.List;
 public class C03_Locators {
 
     public static void main(String[] args) throws InterruptedException {
+
         //1- Bir test class’i olusturun ilgili ayarlari yapin
 
         System.setProperty("Webdriver.chrome.driver","src/resources/chromedriver.exe");
