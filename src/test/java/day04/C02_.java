@@ -15,7 +15,6 @@ public class C02_ {
 
 
 
-
         Thread.sleep(3000);
         driver.close();
 
