@@ -39,7 +39,7 @@ public class C01_JUnitAssertion {
 
         //6. Enter correct email address and password
         WebElement emailAdresKutusu = driver.findElement(By.xpath("//input[@data-qa='login-email']"));
-        emailAdresKutusu.sendKeys("veysel@nehaber.com");
+        emailAdresKutusu.sendKeys("ahmet@nehaber.com");
         WebElement passwordKutusu = driver.findElement(By.xpath("//input[@data-qa='login-password']"));
         passwordKutusu.sendKeys("12345");
 
@@ -47,10 +47,17 @@ public class C01_JUnitAssertion {
         driver.findElement(By.xpath("//button[@data-qa='login-button']")).click();
 
         //8. Verify that 'Loggednin as username' is visible
-        //9. Click 'Logout' button
-        //10.Verify that user is navigated to login page
 
-        //11.Close driver
+
+        //9. Click 'Logout' button
+        driver.findElement(By.xpath("//a[text()=' Logout'] ")).click();
+
+        //10. Verify that user is navigated to login page
+        String expectedUrl="https://automationexercise.com/login";
+        String actualUrl= driver.getCurrentUrl();
+        Assert.assertEquals(expectedUrl,actualUrl);
+
+        //11. Close driver
         driver.close();
 
     }
