@@ -1,4 +1,4 @@
-package tests.teamPractice;
+package teamTekrar;
 
 import org.junit.Assert;
 import org.junit.Test;
@@ -9,11 +9,11 @@ import utilities.TestBase;
 public class P05_IFrame extends TestBase {
     @Test
     public void test01(){
+
         //1 ) https://the-internet.herokuapp.com/iframe adresine gidin.
         driver.get("https://the-internet.herokuapp.com/iframe");
         //2 ) Bir metod olusturun: iframeTest
-        //- “An IFrame containing….” textinin erisilebilir oldugunu test edin ve
-        //konsolda yazdirin.
+        //- “An IFrame containing….” textinin erisilebilir oldugunu test edin ve konsolda yazdirin.
         Assert.assertTrue(driver.findElement(By.xpath("//h3[text()='An iFrame containing the TinyMCE WYSIWYG Editor']")).isEnabled());
 
         //- Text Box’a “Merhaba Dunya!” yazin.

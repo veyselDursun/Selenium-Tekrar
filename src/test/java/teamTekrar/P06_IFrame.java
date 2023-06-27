@@ -1,4 +1,4 @@
-package tests.teamPractice;
+package teamTekrar;
 
 import org.junit.Test;
 import org.openqa.selenium.By;

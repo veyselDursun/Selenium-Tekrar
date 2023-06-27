@@ -1,4 +1,4 @@
-package tests.day06_TestCases;
+package teamTekrar;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.Assert;
@@ -12,8 +12,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.time.Duration;
 
 public class P04_RadioButton {
-    //a. Verilen web sayfasına gidin.
 
+    //a. Verilen web sayfasına gidin.
     WebDriver driver;
     @Before
     public void setup(){
@@ -21,15 +21,19 @@ public class P04_RadioButton {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+
         //https://facebook.com
         driver.get("https://facebook.com");
     }
     @Test
     public void facebookTest(){
+
         //b. Cookies’i kabul edin
         driver.findElement(By.xpath("//button[@title='Allow all cookies']")).click();
+
         //c. Create an account buton’una basin
         driver.findElement(By.xpath("//a[@data-testid='open-registration-form-button']")).click();
+
         //d. Radio button elementlerini locate edin ve size uygun olani secin
         WebElement femaleElement = driver.findElement(By.xpath("//input[@value='1']"));
         WebElement maleElement = driver.findElement(By.xpath("//input[@value='2']"));
