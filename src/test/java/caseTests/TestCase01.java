@@ -121,10 +121,13 @@ public class TestCase01 extends TestBase{
 
      ////15. Click 'Continue' button
      //driver.findElement(By.xpath("//a[@data-qa='continue-button']")).click();
+
      ////16. Verify that 'Logged in as username' is visible
      //Assert.assertTrue(driver.findElement(By.xpath("//i[@class='fa fa-user']")).isDisplayed());
+
      ////17. Click 'Delete Account' button
      //driver.findElement(By.xpath("//*[@href='/delete_account']")).click();
+
      ////18. Verify that 'ACCOUNT DELETED!' is visible and click 'Continue' button
      //Assert.assertTrue(driver.findElement(By.xpath("//*[text()='Account Deleted!']")).isDisplayed());
      //driver.findElement(By.xpath("//a[@data-qa='continue-button']")).click();
