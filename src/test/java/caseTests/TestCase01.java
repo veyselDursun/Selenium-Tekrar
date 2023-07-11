@@ -36,10 +36,10 @@ public class TestCase01 extends TestBase{
     // //6. Enter name and email address
 
     // WebElement nameElement = driver.findElement(By.xpath("//input[@placeholder='Name']"));
-    // nameElement.sendKeys("Murat metin");
+    // nameElement.sendKeys("Veysel");
 
     // WebElement lastNameElement = driver.findElement(By.xpath("(//input[@placeholder='Email Address'])[2]"));
-    // lastNameElement.sendKeys("muratmetinakkus@gmail.com");
+    // lastNameElement.sendKeys("veyseldursun@gmail.com");
 
     // //7. Click 'Signup' button
 
